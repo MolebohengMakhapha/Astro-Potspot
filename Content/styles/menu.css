@@ -1,0 +1,125 @@
+body {
+  margin: 0;
+}
+
+.food-menu {  
+    min-height: 100vh;
+    background-color: #33343a;
+    padding-top: 8vh;
+    padding-bottom: 8vh;
+  }
+
+.food-menu,
+.food-menu * {
+  box-sizing: border-box;
+  margin: 0;
+  font-family: system-ui, sans-serif;
+}
+
+.food-menu h2 {
+  margin: 0 auto;
+  text-align: center;
+  font-size: 8rem;
+}
+
+h2, li span {
+  font-family: "Metal Mania";
+  background-clip: text;
+  -webkit-text-fill-color: goldenrod;
+  background-image: linear-gradient(to bottom, #d4af37, gray, goldenrod);
+}
+
+/* Menu Cards */
+.card {
+    background-color: gray;
+    color: white;
+    box-shadow: 0 0 2rem -0.10rem black;
+    display: grid;
+    grid-template-areas:
+      "cover title"
+      "cover description";
+    grid-auto-columns: min(200px, 30%) 1fr;
+    align-items: center;
+  }
+
+ul {
+  list-style: none;
+  padding-left: 400px;
+  width: min(120ch, 100% - 4rem);
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(min(100%, 30ch), 1fr));
+  gap: 2rem;
+  overflow: hidden;
+}
+
+img,
+span {
+  grid-area: cover;
+}
+
+span {
+  place-self: start;
+  transform: translate(-25%, -25%);
+}
+
+h3 {
+  grid-area: title;
+}
+
+p {
+  grid-area: description;
+}
+
+h3,
+p {
+  padding: 1rem;
+}
+
+img {
+  width: 100%;
+  aspect-ratio: 1;
+  object-fit: cover;
+  max-height: 25vh;
+}
+
+span {
+  --text-stroke: 0.025em;
+  font-size: 3rem;
+  position: relative;
+  padding: 0 0.5ch;
+  z-index: 1;
+  place-self: end;
+  transform: translate(25%, 50%);
+}
+span,
+span::before {
+  width: 2.25ch;
+  aspect-ratio: 1;
+}
+span::before {
+  content: "";
+  background-color: black;
+  box-shadow: 0 0 1rem -0.1rem #d4af37;
+  position: absolute;
+  inset: 0;
+  z-index: -1;
+  transform: skewY(-8deg);
+}
+
+.food-menu .card {
+  grid-template-areas:
+    "cover"
+    "title"
+    "description";
+  grid-auto-columns: unset;
+}
+
+.food-menu {
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+
+h2 {
+  font-size: 3rem;
+}
+

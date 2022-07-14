@@ -1,0 +1,162 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>@ViewBag.Title - Astro Potspot: Feeling Out of Space.</title>
+
+    <link rel="stylesheet" href="~/Content/styles/common.css" />
+    <link rel="stylesheet" href="~/Content/styles/nav.css" />
+    <link rel="stylesheet" href="~/Content/styles/homepage.css" />
+    <link rel="stylesheet" href="~/Content/styles/footer.css">
+    <link rel="stylesheet" href="~/Content/styles/skewed.css">
+    <link rel="stylesheet" href="~/Content/styles/reservations.css">
+    <link rel="stylesheet" href="~/Content/styles/page-container.css">
+    <link rel="stylesheet" href="~/Content/styles/menu.css">
+    <link rel="stylesheet" href="~/Content/styles/buttons.css">
+    <link rel="stylesheet" href="~/Content/fontawesome/css/all.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap"
+          rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab&family=Ubuntu+Condensed&display=swap"
+          rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&family=Ubuntu+Condensed&display=swap"
+          rel="stylesheet" />
+
+    @Styles.Render("~/Content/css")
+    @Scripts.Render("~/bundles/modernizr")
+</head>
+<body>
+    @*//header*@
+
+    <header id="head">
+        <!-- Beginning of Navigation bar -->
+        <div class="navigation-wrapper">
+            <!-- Contact Details-->
+            <div class="left-column">
+                <div class="icon">
+                    <i class="fas fa-phone-volume"></i>
+                </div>
+                <div class="contact-hours-wrapper">
+                    <div class="phone">051 633 5277</div>
+                    <div class="hours">12:00 PM - 05:00 AM</div>
+                </div>
+            </div>
+
+            <!--Nav Bar-->
+            <div class="center-column">
+                <div class="banner-image">
+                    <a href="index.html" target="_blank" rel="noopener noreferrer">
+                        <img src="~/Content/images/logo/Transparent1.png" alt="company logo" />
+                    </a>
+                </div>
+                <div class="links-wrapper">
+                    <div class="nav-link">
+                        
+                        @Html.ActionLink("Home", "Index", "Home")                        
+                    </div>
+                    <div class="nav-link">
+                        
+                        @Html.ActionLink("About", "About", "Home")                        
+                    </div>
+                    <div class="nav-link">
+                        
+                        @Html.ActionLink("Menu", "Menu", "Home")
+                    </div>
+                    <div class="nav-link">
+                        
+                        @Html.ActionLink("Contact", "Create", "Contact")
+                    </div>
+                    <div class="nav-link">
+                        
+                        @Html.ActionLink("Reservation", "Reservation", "Home") 
+                    </div>
+                </div>
+            </div>
+
+            <!--Address Details-->
+            <div class="right-column">
+                <div class="address-wrapper">
+                    <a href="contact.html">
+                        17 Wonder Road <br />
+                        Wonder Park, South Africa 9755
+                    </a>
+                </div>
+                <div class="contact-icon">
+                    <a href="contact.html">
+                        <i class="fas fa-map-marker-alt"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    @* Header ends *@
+
+    <div>
+        @RenderBody()
+        <hr />
+        
+
+    </div>
+
+    @*//footer*@
+
+    <div class="footer">
+        <div class="footer-logo">
+            <a href="index.html" target="_blank" rel="noopener noreferrer">
+                <img src="~/Content/images/logo/Transparent1.png" alt="company logo" />
+            </a>
+        </div>
+        <div class="footer-phone-hours">
+            <span class="phone">057 352 5555</span>
+            <span class="hours">12:00 PM - 05:00 AM</span>
+        </div>
+
+        <div class="links-wrapper">
+            <div class="nav-link">
+                
+                @Html.ActionLink("Home", "Index", "Home")
+            </div>
+            <div class="nav-link">
+                
+                @Html.ActionLink("About", "About", "Home")
+            </div>
+            <div class="nav-link">
+                
+                @Html.ActionLink("Menu", "Menu", "Home")
+            </div>
+            <div class="nav-link">
+                
+                @Html.ActionLink("Contact", "Create", "Contact")
+            </div>
+            <div class="nav-link">
+                
+                @Html.ActionLink("Reservation", "Reservation", "Home")
+            </div>
+        </div>
+
+        <div class="social-media-icons-wrapper">
+            <a href="#">
+                <i class="fab fa-instagram"></i>
+            </a>
+            <a href="#">
+                <i class="fab fa-twitter"> </i>
+            </a>
+            <a href="#">
+                <i class="fab fa-facebook"></i>
+            </a>
+        </div>
+
+        <div class="copyright-wrapper">
+            <!--html entities: look it up tyoe html entities in google-->
+            &copy; 2022 Astro Potspot: Feeling Spaced out &#124; All rights reserved
+        </div>
+    </div>
+
+    @* Footer ends *@
+
+    @Scripts.Render("~/bundles/jquery")
+    @Scripts.Render("~/bundles/bootstrap")
+    @RenderSection("scripts", required: false)
+</body>
+</html>

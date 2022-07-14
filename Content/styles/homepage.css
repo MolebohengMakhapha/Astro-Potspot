@@ -1,0 +1,164 @@
+/* styles for organic-food background */
+
+#main-view{
+    width: 100%;
+    position: relative;
+    overflow: hidden;
+}
+.organic-food-background {
+    /* path to image */
+    background-image: url(../images/backgrounds/menu.jpg);
+    /* padding to move the content away from the screen borders */
+    padding: 100px 0;
+    /* prevent image from floating */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    z-index: 1;
+}
+
+.organic-food-background > .top-heading{
+    padding: 1px 20px;
+    background-color: whitesmoke;
+    color: black;
+    width: 290px;
+    border-radius: 4px;
+}
+
+.organic-food-background > .bottom-heading {
+    padding: 1px 20px;
+    background-color: #d4af37;
+    color: black;
+    width: 290px;
+    border-radius: 4px;
+    margin-top: 10px;
+}
+
+.row{
+    padding: 0px 50px 0;
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-gap: 50px;
+}
+
+.block-section{
+    border-radius: 10px;
+    overflow: hidden;
+    height: 350px;
+    position: relative;
+    right: 25px;
+    -webkit-box-shadow: 0px 13px 14px -8px rgba(0,0,0,0.75);
+  -moz-box-shadow: 0px 13px 14px -8px rgba(0,0,0,0.75);
+  box-shadow: 0px 13px 14px 8px rgba(0,0,0,0.75);
+}
+
+
+.subtitle{
+    display: block;
+    font-size: 40px;
+    text-align: center;
+    font-weight: 900;
+    font-family: "Fontawesome";
+    padding-top: 5px;
+}
+
+.block-section p{
+    background-color: #d4af37;
+    text-align: center;
+    line-height: 160%;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-bottom: 20px;
+}
+
+.reserve-button{
+    margin-left: 10px;
+    border: 2px solid black;
+    border-radius: 25px;
+    position: relative;
+    overflow: hidden;
+    display: grid;
+    grid-template-columns: 2;
+    margin: auto;
+    font-size: 14px;
+    font-weight: bolder;
+    line-height: 1.43;
+    color: black;
+    text-align: center;
+    text-decoration: none;
+    background-color: #d4af37;
+    width: 100px;
+    position: relative;
+
+    -webkit-box-shadow: 0px 13px 14px -8px rgba(0,0,0,0.75);
+  -moz-box-shadow: 0px 13px 14px -8px rgba(0,0,0,0.75);
+  box-shadow: 0px 13px 14px 8px rgba(0,0,0,0.75);
+}
+
+.block-section img{
+    width: 100%;
+    height: 100%;
+    max-height:100%;
+}
+
+.services-section {
+    background-color: #d4af37;
+    border-top: 10px solid whitesmoke;
+    color: black;
+    height: 300px;
+    /*padding to move the content away from the screen borders */
+    font-family: "Ubuntu Condensed", sans-serif;
+    margin-top: -10px;
+}
+
+.services-section > .columns-wrapper{
+    padding: 20px 10px 0 50px;
+    display: grid;
+    margin: auto;
+    grid-template-columns: 33.333% 33.333% 33.333%;
+    grid-gap: 10px;
+    justify-content: center;
+    align-items: center;
+}
+
+.services-section > .columns-wrapper > .column {
+    align-items: center;
+    margin: auto;
+    width: 300px;
+    padding: 30px;
+    text-align: center;
+    border-bottom: 5px solid transparent;
+    border-radius: 20px;
+    transition: 1s;
+    overflow: hidden;
+    position: relative;
+    right: 25px;
+    -webkit-box-shadow: 0px 13px 14px -8px rgba(0,0,0,0.75);
+  -moz-box-shadow: 0px 13px 14px -8px rgba(0,0,0,0.75);
+  box-shadow: 0px 13px 14px 8px rgba(0,0,0,0.75);
+}
+
+.services-section > .columns-wrapper > .column:hover {
+    border-bottom: 5px solid black;
+}
+
+.services-section > .columns-wrapper > .column :nth-child(1){
+    font-size: 3em;
+}
+
+.services-section > .columns-wrapper > .column :nth-child(2){
+    font-size: 1.5em;
+    font-weight: 800;
+    height: 50px;
+    transition: 1s;
+}
+
+.services-section > .columns-wrapper > .column :nth-child(2):hover{
+    letter-spacing: 1px;
+}
+
+.services-section > .columns-wrapper > .column :nth-child(3){
+    letter-spacing: 2px;
+}

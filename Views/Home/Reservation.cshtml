@@ -1,0 +1,57 @@
+﻿
+@{
+    ViewBag.Title = "Reservation";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<div class="reserve-header">
+    Welcome to the Astro Potspot Reservation
+</div>
+
+<section class="form-section">
+    <form name="courtsresv">
+        <fieldset name="memberdemo">
+            <legend>Member Demographics</legend>
+            <label for="fullname">Name:</label>
+            <input id="fullname" type="text" pattern="" placeholder="Firstname Lastname" required><br>
+
+            <label for="memberornot">Are you a member?</label>
+            <input id="member" type="radio" name="member" value="member">
+            <label for="member">Member</label>
+            <input id="nonmember" type="radio" name="member" value="nonmember">
+            <label for="nonmember">Non-member</label><br>
+
+            <label for="email">Email:</label>
+            <input id="email" type="email" placeholder="johndoe@example.com"><br>
+        </fieldset>
+
+        <fieldset name="reserve">
+            <legend>Table Reservation</legend>
+            <label for="number">Facility:</label>
+            <select id="number" name="number" required>
+                <option value="default" disabled selected>-Please select number of people-</option>
+                <option value="one">1</option>
+                <option value="two">2</option>
+                <option value="three">3</option>
+                <option value="more">More</option>
+            </select><br>
+
+            <label for="start_dt">Start time:</label>
+            <input id="start_dt" type="datetime-local" name="starttime" placeholder="mm/dd/yyyy hh:mm AM" required><br>
+
+            <label for="end_dt">Estimated end time:</label>
+            <input id="end_dt" type="datetime-local" name="endtime" placeholder="mm/dd/yyyy hh:mm AM" required><br>
+
+            <input id="terms" type="checkbox" value="agreeterms" required>
+            <label for="terms">I agree to the restaurant’s reservation policy.</label>
+        </fieldset>
+
+        <button class="reserve-button" type="button">
+            Reserve
+        </button>
+        
+    </form>
+</section>
+<div style="height: 10px;">
+
+</div>

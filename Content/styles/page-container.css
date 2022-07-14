@@ -1,0 +1,29 @@
+/*Page container style*/
+.page-container{
+    display: flex;
+    justify-content: center;
+    background: linear-gradient(to bottom, #8a6f17, #c5a745, #e2c975);
+  }
+  
+  .page-container > .content-wrapper{
+    width: 1000px;
+    
+  }
+  
+  .page-container > .content-wrapper > #market{
+    width: 350px;
+    margin: 25px 40px 20px 0;
+    float: left;
+  }
+  
+  .page-container > .content-wrapper p{
+    letter-spacing: 1px;
+    line-height: 30px;
+    text-align: justify;
+  }
+
+.page-container > .content-wrapper > #waiter {
+     width: 350px;
+     margin: 25px 0 20px 40px;
+     float: right;
+}

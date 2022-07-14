@@ -1,0 +1,47 @@
+
+  .reserve-header
+  {
+    text-align:center;
+    margin: 0px auto;
+    background: #8a6f17;
+    font-family: 'Roboto', sans-serif;
+    color: white;
+    padding: 0.5em;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    width:50%;
+  }
+  
+  .form-section
+  {
+    background: #EFF5FB;
+    text-align:center;
+    padding: 10px;
+    border: solid 10px #8a6f17;
+    font-family: Helvetica, sans-serif;
+    width: 100%;
+  }
+  
+  fieldset {
+    width: 100%;
+  }
+
+  
+  input, select {
+    margin: 10px 3px 10px 10px;
+  }
+ 
+
+  .reserve-button{
+      background-color: #8a6f17;
+      border: 2px solid #d4af37;
+      border-radius: 20px;
+      height: 40px;
+      width: 100px;
+      font-weight: 900;
+      color: whitesmoke;
+  }
+
+  legend{
+      border: 5px double gray;
+  }

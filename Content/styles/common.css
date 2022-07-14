@@ -1,0 +1,21 @@
+/*Common styles*/
+*{
+  box-sizing: border-box;
+}
+body {
+  margin: 0;
+  font-family: "Roboto", sans-serif;
+}
+h1,h2,h3,h4,h6{
+  font-family: 'Roboto Slab', sans-serif;
+}
+
+.icon {
+  margin-right: 15px;
+}
+
+.icon i {
+  font-size: 2em;
+}
+
+
